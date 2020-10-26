@@ -115,7 +115,7 @@
           <div class="offset-lg-2 col-lg-10 qs-text animate-show-left">        
             <h4>
               <strong
-                >Escritório Maurício Nanrtonis Advogados associados atua há mais
+                >Escritório Maurício Nanrtonis Advogados Associados atua há mais
                 de trinta anos no Mercado</strong
               >
             </h4>
@@ -272,7 +272,7 @@
             <div class="text-contato text-center">            
                 <img class="pin-local" src="./public/images/pin.png" alt="">
                 <h5><strong>R. Piracuama 404 , 2º andar</strong></h5>
-                <p>05.017-040 / Perdizes<br>
+                <p>05-017-040 / Perdizes<br>
                   SP -  Brasil</p>
             </div>
             </a>  
@@ -293,7 +293,7 @@
             /></a>
             </div>
             <div class="ft-text col-sm-4">
-              <p class="text-white text-right">Direitos reservados - 2020</p>
+              <p class="text-white text-right">2020 © Direitos reservados</p>
             </div>
           </div>
         </div>
@@ -317,6 +317,21 @@
           $(this).find('.imagem-contato').css('transform', 'scale(1.1)');
       });
       });
+
+      if ($(window).width() > 992) {
+        $(window).scroll(function(){  
+          if ($(this).scrollTop() > 40) {
+              $('#menu-bar').addClass("fixed-top");
+              $('#logo-top > img').addClass("w-75");
+              // add padding top to show content behind navbar
+            }else{
+              $('#menu-bar').removeClass("fixed-top");
+              $('#logo-top > img').removeClass("w-75");
+              // remove padding top from body
+              $('body').css('padding-top', '0');
+            }   
+        });
+      }
 
     </script>
   </body>
