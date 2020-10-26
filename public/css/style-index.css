@@ -10,6 +10,7 @@ html {
 header {
   position: relative;
   top: 0;
+  padding-bottom: 2em;
   z-index: 99;
   width: 100%;
   background-color: #00282e;

@@ -324,12 +324,14 @@
       if ($(window).width() > 992) {
         $(window).scroll(function(){  
           if ($(this).scrollTop() > 40) {
+              $('header').css('position', 'relative');
               $('#menu-bar').addClass("fixed-top");
               $('#logo-top > img').addClass("w-75");
               // add padding top to show content behind navbar
             }else{
-              $('#menu-bar').removeClass("fixed-top");
-              $('#logo-top > img').removeClass("w-75");
+              $('header').css('position', 'absolute');
+              $('#menu-bar').removeClass('fixed-top');
+              $('#logo-top > img').removeClass('w-75');
               // remove padding top from body
               $('body').css('padding-top', '0');
             }   
