@@ -146,11 +146,11 @@ a[aria-expanded=true] .fa-chevron-down {
 /* quem somos */
 
 #quem-somos {
-  padding-top: 4em;
+
 }
 
 #quem-somos .title-section {
-  padding: 0em 0.6em;
+  padding: 1.5em 0em 0.5em;
 }
 
 .qs-text {
@@ -372,14 +372,15 @@ footer {
   } 
   #socio-f {
     background: url('../images/texture.png');
+    padding-top: 4em;
   }
   #socio-f .container {
     max-width: 1140px;
   }   
   #socio-f .row {
     position: relative;
-    bottom: 4rem;
     box-shadow: 1px 5px 15px #0000008f;
+    margin-top: -8em;
   }
   #areas-at {
     padding: 4em 0em 8em 0em!important;
