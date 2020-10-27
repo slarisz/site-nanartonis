@@ -10,7 +10,6 @@ html {
 header {
   position: relative;
   top: 0;
-  padding-bottom: 2em;
   z-index: 99;
   width: 100%;
   background-color: #00282e;
@@ -21,8 +20,8 @@ header {
 }
 
 
-a[aria-expanded=true] .fa-chevron-down {
- transform: rotate(180deg);
+.areas-title[aria-expanded=true] .fa-caret-right {
+ transform: rotate(90deg);
 }
 
 /* menu */
@@ -36,7 +35,7 @@ a[aria-expanded=true] .fa-chevron-down {
 #menu-bar {
   display: flex;
   align-content: center;
-  padding: 2em 1em;
+  padding: 0.8em 1em;
   animation-delay: 500ms;
   transition: 1s all;
 }
@@ -147,11 +146,11 @@ a[aria-expanded=true] .fa-chevron-down {
 /* quem somos */
 
 #quem-somos {
-
+  padding-top: 4em;
 }
 
 #quem-somos .title-section {
-  padding: 1.5em 0em 0.5em;
+  padding: 0em 0em 0.5em;
 }
 
 .qs-text {
@@ -179,27 +178,31 @@ a[aria-expanded=true] .fa-chevron-down {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+}
 
+.areas-title h4 {
+ font-weight: 600;
+}
+
+.areas-title i {
+  margin: auto 15px;
+  font-size: 28px;
+  color: #debc70;
+}
+
+.areas-desc ol li {
+  list-style: none;
+}
+
+.areas-desc ul li {
+  margin-top: 1em;
+  list-style: square;
 }
 
 .topics {
   color: #fff;
   list-style: none;
-  padding-left: 1rem;
-}
-
-.topics li{
-  margin-bottom: 2em;
-}
-
-.topics li::before {
-  content: "\f0da";
-  font-family: "fontawesome";
-  left: -0.5em;
-  font-size: 30px;
-  position: relative;
-  top: 5px;
-  color: #debc70;
+  margin: 1rem 0rem 2rem;
 }
 
 #areas-at .botao-ar {
@@ -355,6 +358,10 @@ footer {
   header {
     position: absolute;
     background-color: #00282e00;
+    padding-bottom: 2em;
+  }
+  #menu-bar {
+    padding: 2em 1em;
   }
   #logo-top {
     margin: initial;
@@ -365,15 +372,15 @@ footer {
     justify-content: flex-end;
   }
   .text-banner {
-    width: 100%;
-    text-align:initial;
+    width: 90%;
+    text-align: initial;
   }
   #quem-somos {
     background: url('../images/texture.png');
   } 
   #socio-f {
     background: url('../images/texture.png');
-    padding-top: 4em;
+    padding-top: 12em;
   }
   #socio-f .container {
     max-width: 1140px;
@@ -392,7 +399,7 @@ footer {
     padding: 4em 25% 4em 3em !important;
   }
   #areas-at {
-    padding: 8em 0em !important;
+    padding: 8em 0em 4em !important;
   }
   .ft-text {
     display: flex;
@@ -424,6 +431,9 @@ footer {
 @media (max-width: 991px) {
   #item-menus {
     margin-top: 20px;
+  }
+  #quem-somos .title-section {
+    padding: 0em 0.8em 0.5em;
   }
 }
 
