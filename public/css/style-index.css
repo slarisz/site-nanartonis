@@ -161,7 +161,7 @@ header {
 .title-section {
   text-transform: uppercase;
   color: #debc70;
-  font-size: clamp(1rem, 7vw, 2.5rem);
+  font-size: clamp(2rem, 7vw, 2.5rem);
 }
 
 #img-qs {
