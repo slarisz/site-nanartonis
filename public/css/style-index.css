@@ -126,6 +126,10 @@ header {
   color: #fff;
 }
 
+#carousel-banner {
+  background: #00282e;
+}
+
 .text-banner {
   display: flex;
   flex-direction: column;
