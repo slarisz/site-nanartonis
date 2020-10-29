@@ -24,6 +24,10 @@ header {
  transform: rotate(90deg);
 }
 
+.areas-title[aria-expanded=false] .fa-caret-right {
+  transform: rotate(0deg);
+ }
+
 /* menu */
 
 .fixed-top {
@@ -145,11 +149,11 @@ header {
 
 /* quem somos */
 
-#quem-somos {
+#sobre-qs {
   padding-top: 4em;
 }
 
-#quem-somos .title-section {
+#sobre-qs .title-section {
   padding: 0em 0em 0.5em;
 }
 
@@ -161,7 +165,7 @@ header {
 .title-section {
   text-transform: uppercase;
   color: #debc70;
-  font-size: clamp(2rem, 7vw, 2.5rem);
+  font-size: clamp(1.5rem, 7vw, 2.5rem);
 }
 
 #img-qs {
@@ -181,13 +185,15 @@ header {
 }
 
 .areas-title h4 {
- font-weight: 600;
+  font-weight: 600;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  color: #debc70;
 }
 
 .areas-title i {
   margin: auto 15px;
   font-size: 28px;
-  color: #debc70;
+  color: #fff;
 }
 
 .areas-desc ol li {
@@ -316,6 +322,11 @@ header {
   margin-bottom: 1rem;
 }
 
+.phone-icon i{
+  color: #ebbd6c;
+  font-size: 28px;
+}
+
 .pin-local {
   margin: 2rem auto;
   display: block;
@@ -375,9 +386,15 @@ footer {
     width: 90%;
     text-align: initial;
   }
-  #quem-somos {
+  #sobre-qs {
     background: url('../images/texture.png');
-  } 
+    height: 300px;
+    padding-top: 4rem;
+  }
+  .side-qs {
+    height: 221px;
+    overflow: hidden;
+  }
   #socio-f {
     background: url('../images/texture.png');
     padding-top: 12em;
@@ -397,6 +414,7 @@ footer {
     margin-bottom: -3%;
     box-shadow: 1px 5px 15px #0000008f;
     padding: 4em 25% 4em 3em !important;
+    position: absolute;
   }
   #areas-at {
     padding: 8em 0em 4em !important;
@@ -432,8 +450,8 @@ footer {
   #item-menus {
     margin-top: 20px;
   }
-  #quem-somos .title-section {
-    padding: 0em 0.8em 0.5em;
+  #sobre-qs .title-section {
+    padding: 0em 2rem 1rem;
   }
 }
 
@@ -455,11 +473,10 @@ footer {
     height: 80vh;
   }
   #areas-at {
-    background-image: url('../images/areas2-bg.png');
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-  
+    background-image: url('../images/areas2-bg.png');  
+  }
+  .topics:first-child {
+    margin: 0rem 0rem 2rem;
   }
 }
 
@@ -479,15 +496,3 @@ footer {
   animation-duration: 1s;
   animation-fill-mode: backwards;
 }
-
-
-
-
-
-
-
-
-
-
-
-
