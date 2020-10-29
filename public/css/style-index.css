@@ -374,12 +374,16 @@ footer {
 
 /* media queries */
 
-@media(min-width: 992px) {
+@media(min-width: 1200px) {
   header {
     position: absolute;
     background-color: #00282e00;
     padding-bottom: 2em;
   }
+} 
+
+@media(min-width: 992px) {
+  
   #menu-bar {
     padding: 2em 1em;
   }
@@ -454,6 +458,12 @@ footer {
   } 
 }
 
+
+@media (max-width: 1200px) {
+  #item-menus {
+    margin-top: 20px;
+  }
+}
 
 @media (max-width: 991px) {
   #item-menus {
