@@ -262,9 +262,6 @@ header {
 
 /* contato */
 
-#contato {
-  color: #fff;
-}
 
 #contato .bg-contatos {
   overflow: hidden;
@@ -282,6 +279,12 @@ header {
   text-decoration: none;
   color: #fff;
   font-weight: 600;
+  transition: 0.3s all;
+}
+
+#contato a:hover {
+  color: #ebbd6c;
+  transition: 0.5s all;
 }
 
 #email-bg {
@@ -315,6 +318,8 @@ header {
   flex-direction: column;
   justify-content: center;
 }
+
+
 
 .email-icon {
   font-size: clamp(0.8rem, 5vw, 1.5rem);
