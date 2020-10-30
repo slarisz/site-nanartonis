@@ -229,6 +229,11 @@ header {
 
 /* socio fundador */
 
+#socio {
+  position: relative;
+  overflow: hidden;
+}
+
 #socio-f .container {
   max-width: 100%;
 } 
@@ -472,6 +477,10 @@ footer {
   #sobre-qs .title-section {
     padding: 0em 2rem 1rem;
   }
+  .side-qs {
+    position: relative;
+    overflow: hidden;
+  }  
 }
 
 @media (max-width: 768px) {
