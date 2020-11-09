@@ -324,10 +324,8 @@ header {
   justify-content: center;
 }
 
-
-
 .email-icon {
-  font-size: clamp(0.8rem, 5vw, 1.5rem);
+  font-size: clamp(1rem, 4vw, 1.5rem);
   margin-bottom: 1rem;
 }
 
