@@ -151,6 +151,19 @@ header {
   line-height: 1.2em;
 }
 
+.box-color {
+  width: clamp(300px, 4vw, 500px);
+  padding: 6rem 3rem;
+  margin: 15% auto !important;
+  display: block;
+}
+
+.banner-rotativo .carousel-caption .box-color img {
+  max-width: 100%;
+  width: 50%;
+  margin-bottom: 25px;
+}
+
 /* quem somos */
 
 #sobre-qs {
